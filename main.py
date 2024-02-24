@@ -1,5 +1,6 @@
 def main():
-    with open("books/frankenstein.txt") as f:
+    file_path = "books/frankenstein.txt"
+    with open(file_path) as f:
         file_contents = f.read()
         print("--- Begin report of books/frankenstein.txt ---")
         print(f"{count_words(file_contents)} words found in the document")
